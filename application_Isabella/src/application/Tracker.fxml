@@ -3,7 +3,7 @@
 <?import java.lang.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.AnchorPane?>
 
 <BorderPane prefHeight="440.0" prefWidth="514.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.TrackerController">
    <top>
@@ -82,7 +82,7 @@
         </rowConstraints>
          <children>
             <Label text="Time tracker" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
-            <TableView prefHeight="108.0" prefWidth="373.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <TableView fx:id="travailsTable" prefHeight="108.0" prefWidth="373.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
               <columns>
                 <TableColumn fx:id="sujetColumn" prefWidth="75.0" text="Sujet" />
                 <TableColumn fx:id="travailsColumn" prefWidth="75.0" text="Travails" />
